@@ -1,7 +1,7 @@
 body {
+  display: inline-block;
   font-family: "Poppins", sans-serif;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 100px;
   overflow-x: hidden;
 }
 
@@ -18,11 +18,17 @@ h2 {
   font-size: 1.75rem;
 }
 
-.header-container {
-  width: 100%;
+#header {
   background-color: blueviolet;
-  padding: 120px;
+  width: 100%;
+}
+
+.header-container {
+  width: 80%;
+  background-color: blueviolet;
   color: white;
+  margin: auto;
+  padding: 20px;
 }
 .header-container h1 {
   color: white;
@@ -32,15 +38,16 @@ h2 {
 }
 
 .lesson-content {
-  margin: 40px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
 }
 .lesson-content.container {
   display: inline-block;
-  width: 100%;
+  width: 80%;
+  padding: 20px;
   height: auto;
-  margin: 10px auto;
-  padding: 0 30px;
 }
 
 .lesson-video {
@@ -64,7 +71,7 @@ h2 {
   outline: none;
   cursor: pointer;
   padding: 16px;
-  width: 200px;
+  width: 20%;
   border-bottom: white;
   z-index: 1;
 }
@@ -94,6 +101,7 @@ h2 {
   height: auto;
 }
 .tabs button.active {
+  font-weight: bold;
   border-bottom: 4px solid;
   border-color: blueviolet;
 }

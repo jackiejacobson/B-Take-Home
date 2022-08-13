@@ -1,7 +1,7 @@
 body{
+    display: inline-block;
     font-family: 'Poppins', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 100px;
     overflow-x: hidden;
 }
 
@@ -18,11 +18,18 @@ h2{
     font-size: 1.75rem;
 }
 
+
+//White bar at the top??? I even tried when setting my margins to 0.
+#header{
+    background-color: blueviolet;
+    width: 100%;
+}
 .header-container{
-    width:100%;
+    width:80%;
     background-color: blueviolet ;
-    padding: 120px;
     color: white;
+    margin:auto;
+    padding: 20px;
 
     h1{
         color: white;
@@ -32,17 +39,21 @@ h2{
         font-weight: bold;
     }
 }
-//General Lesson Content
+//Lesson Content
 .lesson-content{
-    margin: 40px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    //display: inline-block;
 
     &.container{
         display: inline-block;
-        width: 100%;
+        width: 80%;
+        padding: 20px;
         height: auto;
-        margin: 10px auto;
-        padding: 0 30px;
+        //margin: 10px auto;
+        //padding: 0 30px;
     }
 }
 .lesson-video{
@@ -67,7 +78,7 @@ h2{
         outline: none;
         cursor: pointer;
         padding: 16px;
-        width: 200px;
+        width: 20%;
         border-bottom: white;
         z-index: 1;
     }
@@ -77,6 +88,8 @@ h2{
         border-bottom: 4px solid blueviolet;
         color: white;
     }
+
+    //Can't seem to get content in box to flex (I want description on left and image with caption on right
     &.content{
         display: flex;
         flex-direction: row;
@@ -98,6 +111,7 @@ h2{
     }
 
     button.active{
+        font-weight: bold;
         border-bottom: 4px solid;
         border-color: blueviolet;
         
