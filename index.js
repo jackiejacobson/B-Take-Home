@@ -1,3 +1,4 @@
+//Quiz Module
 const radios = document.querySelectorAll('input[type=radio][name="answer"]');
 
 console.log("radios is a type of:", typeof radios);
@@ -30,6 +31,10 @@ radios.forEach((radio) => {
     });
 });
 
+
+
+
+//Tab Module
 function openCase(event, caseNum){
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabs content");

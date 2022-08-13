@@ -65,11 +65,16 @@ h2{
 }
 
 //Tab Modal
+.tabs-container{
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px gray;
+}
 .tabs{
+    border-bottom: 1px solid gray;
     font: inherit;
     overflow: hidden;
     background-color: white;
-    width: 80%;
+    
 
     button{
         background-color: inherit;
@@ -81,6 +86,12 @@ h2{
         width: 20%;
         border-bottom: white;
         z-index: 1;
+    }
+    button.active{
+        font-weight: bold;
+        border-bottom: 4px solid;
+        border-color: blueviolet;
+        background-color:#DA7BFF;
     }
 
     button:hover{
@@ -96,7 +107,7 @@ h2{
         align-items: flex-start;
         gap: 50px;
 
-        border: 1px solid gray;
+        border: 0px 1px solid gray;
         background-color: white;
         height:auto;
         display: inline-block;
@@ -110,12 +121,7 @@ h2{
         height: auto;
     }
 
-    button.active{
-        font-weight: bold;
-        border-bottom: 4px solid;
-        border-color: blueviolet;
-        
-    }
+    
 }
 
 //Static Quiz
@@ -127,7 +133,7 @@ h2{
     }
 }
 
-
+//I want entire label to turn green/red as well
 .message {
     display: inline;
     margin-left: 1em;
@@ -140,7 +146,14 @@ h2{
     }
 }
 .quiz-container{
+    box-shadow: 2px 2px 5px gray;
+    border: 1px solid gray;
+    padding: 20px;
     p{
         font-weight: bold;
     }
+    .answer{
+        padding: 10px 0;
+    }
+
 }
