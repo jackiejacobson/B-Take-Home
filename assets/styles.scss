@@ -1,0 +1,132 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+//Headers
+h1, h2, h3{
+    font-weight: '600px';
+    color: black;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+
+.header-container{
+    width:100%;
+    background-color: blueviolet ;
+    padding: 120px;
+    color: white;
+
+    h1{
+        color: white;
+    }
+
+    .supertitle{
+        font-weight: bold;
+    }
+}
+//General Lesson Content
+.lesson-content{
+    margin: 40px;
+    display: inline-block;
+
+    &.container{
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        padding: 0 30px;
+    }
+}
+.lesson-video{
+    border: 1px solid lightgray;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    margin: 60px auto;
+}
+
+//Tab Modal
+.tabs{
+    font: inherit;
+    overflow: hidden;
+    background-color: white;
+    width: 80%;
+
+    button{
+        background-color: inherit;
+        float: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 16px;
+        width: 200px;
+        border-bottom: white;
+        z-index: 1;
+    }
+
+    button:hover{
+        background-color: blueviolet;
+        border-bottom: 4px solid blueviolet;
+        color: white;
+    }
+    &.content{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 50px;
+
+        border: 1px solid gray;
+        background-color: white;
+        height:auto;
+        display: inline-block;
+        padding: 30px;
+    }
+    .use-case-img, .use-case-text{
+        width: fit-content;        
+    }
+    img{
+        width: 60%;
+        height: auto;
+    }
+
+    button.active{
+        border-bottom: 4px solid;
+        border-color: blueviolet;
+        
+    }
+}
+
+//Static Quiz
+.answer{
+    display:block;
+    input:hover,
+    label:hover {
+    cursor: pointer;
+    }
+}
+
+
+.message {
+    display: inline;
+    margin-left: 1em;
+
+    &.incorrect {
+        color:red;
+    }
+    &.correct {
+        color:green;
+    }
+}
+.quiz-container{
+    p{
+        font-weight: bold;
+    }
+}

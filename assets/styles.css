@@ -1,0 +1,122 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: "600px";
+  color: black;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+.header-container {
+  width: 100%;
+  background-color: blueviolet;
+  padding: 120px;
+  color: white;
+}
+.header-container h1 {
+  color: white;
+}
+.header-container .supertitle {
+  font-weight: bold;
+}
+
+.lesson-content {
+  margin: 40px;
+  display: inline-block;
+}
+.lesson-content.container {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  padding: 0 30px;
+}
+
+.lesson-video {
+  border: 1px solid lightgray;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 60px auto;
+}
+
+.tabs {
+  font: inherit;
+  overflow: hidden;
+  background-color: white;
+  width: 80%;
+}
+.tabs button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px;
+  width: 200px;
+  border-bottom: white;
+  z-index: 1;
+}
+.tabs button:hover {
+  background-color: blueviolet;
+  border-bottom: 4px solid blueviolet;
+  color: white;
+}
+.tabs.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 50px;
+  border: 1px solid gray;
+  background-color: white;
+  height: auto;
+  display: inline-block;
+  padding: 30px;
+}
+.tabs .use-case-img, .tabs .use-case-text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.tabs img {
+  width: 60%;
+  height: auto;
+}
+.tabs button.active {
+  border-bottom: 4px solid;
+  border-color: blueviolet;
+}
+
+.answer {
+  display: block;
+}
+.answer input:hover,
+.answer label:hover {
+  cursor: pointer;
+}
+
+.message {
+  display: inline;
+  margin-left: 1em;
+}
+.message.incorrect {
+  color: red;
+}
+.message.correct {
+  color: green;
+}
+
+.quiz-container p {
+  font-weight: bold;
+}/*# sourceMappingURL=styles.css.map */
