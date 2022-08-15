@@ -80,36 +80,61 @@ h2 {
   border-bottom: white;
   z-index: 1;
 }
-.tabs button.active {
-  font-weight: bold;
-  border-bottom: 4px solid;
-  border-color: blueviolet;
-  background-color: #DA7BFF;
-}
-.tabs button:hover {
+.tabs button:hover, .tabs button:focus {
   background-color: blueviolet;
   border-bottom: 4px solid blueviolet;
   color: white;
 }
+.tabs button.active {
+  font-weight: bold;
+  border-bottom: 4px solid;
+  color: black;
+  border-color: blueviolet;
+  background-color: #DA7BFF;
+}
 .tabs.content {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-basis: content;
   flex-direction: row;
-  align-items: flex-start;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: auto;
+  align-content: start;
   border: 0px 1px solid gray;
   background-color: white;
   height: auto;
-  display: inline-block;
   padding: 30px;
 }
-.tabs .use-case-img, .tabs .use-case-text {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.tabs.content.default {
+  display: flex;
 }
-.tabs img {
-  width: 60%;
+.tabs.content.inactive {
+  display: none;
+}
+.tabs .use-case-img,
+.tabs .use-case-text {
+  display: flex;
+}
+.tabs .use-case-text {
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.tabs .use-case-img {
+  flex: 3 1 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tabs .use-case-img img {
+  border: 1px solid lightgray;
+  width: 100%;
   height: auto;
+}
+.tabs .use-case-img p {
+  font-size: 0.85rem;
+  font-style: italic;
 }
 
 .answer {
@@ -119,10 +144,21 @@ h2 {
 .answer label:hover {
   cursor: pointer;
 }
+.answer.selected.incorrect label {
+  color: red;
+}
+.answer.selected.incorrect .message {
+  color: red;
+}
+.answer.selected.correct label {
+  color: green;
+}
+.answer.selected.correct .message {
+  color: green;
+}
 
 .message {
-  display: inline;
-  margin-left: 1em;
+  margin-left: 2.5rem;
 }
 .message.incorrect {
   color: red;
