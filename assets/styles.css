@@ -117,7 +117,7 @@ h2 {
   display: flex;
 }
 .tabs .use-case-text {
-  flex: 1 1 auto;
+  flex: 1 1 400px;
   flex-direction: column;
   justify-content: center;
 }
@@ -130,7 +130,6 @@ h2 {
 .tabs .use-case-img img {
   border: 1px solid lightgray;
   width: 100%;
-  height: auto;
 }
 .tabs .use-case-img p {
   font-size: 0.85rem;
