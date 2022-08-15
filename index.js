@@ -1,9 +1,6 @@
 //Quiz Module
 const radios = document.querySelectorAll('input[type=radio][name="answer"]');
 
-console.log("radios is a type of:", typeof radios);
-console.log("radios is not an array");
-console.log("radios".radios);
 
 const radioMessages = {
     answer1: {
@@ -28,7 +25,7 @@ radios.forEach((radio) => {
 
     radio.addEventListener("change", (e) => {
         let selectedAnswerDiv = document.getElementById(e.target.id).parentNode;
-        console.log('selectedAnswerDiv', selectedAnswerDiv);
+        //console.log('selectedAnswerDiv', selectedAnswerDiv);
 
         let answerResult = radioMessages[e.target.id].correct;
         let correctClass = answerResult ? 'correct' : 'incorrect';
