@@ -6,7 +6,9 @@ body {
 }
 
 //Headers
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-weight: '600px';
     color: black;
 }
@@ -14,11 +16,10 @@ h1, h2, h3{
 h1 {
     font-size: 2.5rem;
 }
+
 h2 {
     font-size: 1.75rem;
 }
-
-
 
 #header {
     background-color: blueviolet;
@@ -27,7 +28,7 @@ h2 {
 
 .header-container {
     width: 80%;
-    background-color: blueviolet ;
+    background-color: blueviolet;
     color: white;
     margin: auto;
     padding: 20px;
@@ -40,23 +41,22 @@ h2 {
         font-weight: bold;
     }
 }
+
 //Lesson Content
 .lesson-content {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
-    //display: inline-block;
 
     &.container {
         display: inline-block;
         width: 80%;
         padding: 20px;
         height: auto;
-        //margin: 10px auto;
-        //padding: 0 30px;
     }
 }
+
 .lesson-video {
     border: 1px solid lightgray;
     max-width: 800px;
@@ -76,7 +76,7 @@ h2 {
     font: inherit;
     overflow: hidden;
     background-color: white;
-    
+
 
     button {
         background-color: inherit;
@@ -89,7 +89,8 @@ h2 {
         border-bottom: white;
         z-index: 1;
 
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
             background-color: blueviolet;
             border-bottom: 4px solid blueviolet;
             color: white;
@@ -100,16 +101,14 @@ h2 {
             border-bottom: 4px solid;
             color: black;
             border-color: blueviolet;
-            background-color:#DA7BFF;
+            background-color: #DA7BFF;
         }
-
-        
     }
 
     &.content {
         display: inline-flex;
-        flex-wrap:wrap;
-        flex-basis:content;
+        flex-wrap: wrap;
+        flex-basis: content;
         flex-direction: row;
         justify-content: space-between;
         gap: 20px;
@@ -118,19 +117,20 @@ h2 {
 
         border: 0px 1px solid gray;
         background-color: white;
-        height:auto;
+        height: auto;
         padding: 30px;
 
-        &.default{
+        &.default {
             display: flex;
         }
 
-        &.inactive{
+        &.inactive {
             display: none;
         }
     }
+
     .use-case-img,
-    .use-case-text{
+    .use-case-text {
         display: flex;
     }
 
@@ -139,21 +139,23 @@ h2 {
         flex-direction: column;
         justify-content: center;
     }
+
     .use-case-img {
         flex: 3 1 400px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         img {
             border: 1px solid lightgray;
             width: 100%;
         }
+
         p {
             font-size: .85rem;
             font-style: italic;
         }
     }
-    
 }
 
 //Static Quiz
@@ -162,44 +164,22 @@ h2 {
 
     input:hover,
     label:hover {
-    cursor: pointer;
-    }
-
-    &.selected{
-        &.incorrect{
-            label{
-                color: red;
-            }
-
-            .message{
-                color: red;
-            }
-        }
-
-        &.correct {
-            label {
-                color: green;
-            }
-
-            .message {
-                color: green;
-            }
-        }
+        cursor: pointer;
     }
 }
-
-
 
 .message {
-    margin-left: 2.5rem;
+    margin-left: 1.6rem;
 
     &.incorrect {
-        color:red;
+        color: red;
     }
+
     &.correct {
-        color:green;
+        color: green;
     }
 }
+
 .quiz-container {
     box-shadow: 2px 2px 5px gray;
     border: 1px solid gray;
@@ -210,5 +190,4 @@ h2 {
     .answer {
         padding: 10px 0;
     }
-
 }
