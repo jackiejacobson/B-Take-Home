@@ -139,21 +139,46 @@ h2 {
 }
 
 .answer {
-  display: block;
+  margin-bottom: 1rem;
+}
+.answer label {
+  padding: 0 0.5rem;
+}
+.answer .message {
+  display: none;
+  text-indent: 2.75rem;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+.answer:hover {
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+}
+.answer input {
+  margin-left: 1rem;
 }
 .answer input:hover,
 .answer label:hover {
   cursor: pointer;
 }
-
-.message {
-  margin-left: 1.6rem;
+.answer.selected {
+  border-radius: 5px;
 }
-.message.incorrect {
+.answer.selected.incorrect {
+  border-color: red;
   color: red;
 }
-.message.correct {
+.answer.selected.incorrect .message {
+  color: red;
+  display: block;
+}
+.answer.selected.correct {
+  border-color: green;
   color: green;
+}
+.answer.selected.correct .message {
+  color: green;
+  display: block;
 }
 
 .quiz-container {
